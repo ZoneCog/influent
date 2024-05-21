@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>oculus.influent</groupId>
+		<groupId>jboulon.influent</groupId>
 		<artifactId>influent</artifactId>
 		<version>1.2.0</version>
 	</parent>
@@ -40,7 +40,7 @@
 		
 		<!-- REQUIRED!!!: Client files are overlaid in WAR -->		
 		<dependency>
-			<groupId>oculus.aperture</groupId>
+			<groupId>unchartedsoftware.aperture</groupId>
 			<artifactId>aperture-client</artifactId>
 			<version>${aperture.version}</version>
 		</dependency>		
@@ -129,7 +129,7 @@
 					<overlays>
 						<overlay>
 							<artifactId>aperture-client</artifactId>
-							<groupId>oculus.aperture</groupId>
+							<groupId>unchartedsoftware.aperture</groupId>
 							<type>jar</type>
 							<targetPath>aperture</targetPath>
 						</overlay>
@@ -289,7 +289,7 @@
 				   	            <configuration>
 				   	              <artifactItems>
 				   	                <artifactItem>
-				   	                  <groupId>oculus.aperture.service</groupId>
+				   	                  <groupId>unchartedsoftware.aperture.service</groupId>
 				   	                  <artifactId>aperture-capture-phantom</artifactId>
 				   	                  <type>${influent.dev.phantomjs.type}</type>
 				   	                  <version>${aperture.version}</version>
