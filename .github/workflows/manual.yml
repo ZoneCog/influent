@@ -1,0 +1,69 @@
+# This is a basic workflow that is manually triggered
+
+#name: Manual workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+#on:
+#  workflow_dispatch:
+    # Inputs the workflow accepts.
+#    inputs:
+#      name:
+        # Friendly description to be shown in the UI instead of 'name'
+#        description: 'Person to greet'
+        # Default value if no value is explicitly provided
+#        default: 'World'
+        # Input has to be provided for the workflow to run
+#        required: true
+        # The data type of the input
+#        type: string
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+#jobs:
+  # This workflow contains a single job called "greet"
+#  greet:
+#  clone:
+    # The type of runner that the job will run on
+#    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+#    steps:
+    # Runs a single command using the runners shell
+#    - name: Send greeting
+#      run: echo "Hello ${{ inputs.name }}"
+
+    name: Clone Github Repo
+  # You may pin to the exact commit or the version.
+  # uses: whyakari/github-repo-action@809aeef1050b89b6f64d36fb9893c5e9ceaecbba
+      uses: whyakari/github-repo-action@v3.1
+      with:
+    # Repository Owner
+      owner: unchartedsoftware
+    # Repository name
+      repository: aperturejs
+    # PAT with repository scope (https://github.com/settings/tokens)
+#    access-token: # optional
+    # Depth of the clone (default: full history)
+#    depth: # optional, default is 
+    # Branch name (default: main)
+#    branch: # optional, default is main
+          
+
+#git clone git://github.com/oculusinfo/ensemble-clustering.git
+#https://github.com/unchartedsoftware/aperturejs.git
+#  - name: Git Clone Action
+  # You may pin to the exact commit or the version.
+  # uses: sudosubin/git-clone-action@8a93ce24d47782e30077508cccacf8a05a891bae
+#  uses: sudosubin/git-clone-action@v1.0.1
+#  with:
+    # Repository owner and name. Ex: sudosubin/git-clone-action
+#    repository: # optional, default is ${{ github.repository }}
+    # Git host platform. Ex: github, gitlab, bitbucket, gitee, or else (git.suckless.org, ...)
+#    platform: # optional, default is github
+    # Git branch or tag to checkout.
+#    ref: # optional
+    # Relative path from current directory, where to clone.
+#    path: # optional
+
+
+  
