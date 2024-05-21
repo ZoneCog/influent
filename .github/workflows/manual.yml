@@ -41,7 +41,8 @@ jobs:
     # Depth of the clone (default: full history)
 #    depth: # optional, default is 
     # Branch name (default: main)
-#    branch: # optional, default is main
+          branch: master
+          # optional, default is main
 
       # Uncomment this step to verify the use of 'deno fmt' on each commit.
       # - name: Verify formatting
