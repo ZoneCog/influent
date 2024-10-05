@@ -34,8 +34,8 @@
 		<influent.dev.client.src>../influent-client/influent-clientjs/src</influent.dev.client.src>
 	</properties>
 
-	<!-- For development convenience these properties may be used to copy out 
-		the appropriate phantom capture executable based on the OS. In a production 
+	<!-- For development convenience these properties may be used to copy out
+		the appropriate phantom capture executable based on the OS. In a production
 		environment the appropriate version and the path to it must be set up manually. -->
 	<profiles>
 		<profile>
@@ -122,7 +122,7 @@
 			<dependency>
 				<groupId>net.sf.ehcache</groupId>
 				<artifactId>ehcache-core</artifactId>
-				<version>2.6.6</version>
+				<version>2.6.11</version>
 			</dependency>
 
 			<dependency>
@@ -134,20 +134,20 @@
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>1.7.5</version>
+				<version>2.0.16</version>
 			</dependency>
 		
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
-				<version>1.7.5</version>
+				<version>2.0.16</version>
 				<!--scope>test</scope-->
 			</dependency>
 		
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.11</version>
+				<version>5.11.0</version>
 				<!--scope>test</scope-->
 			</dependency>
 		</dependencies>
