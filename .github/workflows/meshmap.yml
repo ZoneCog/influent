@@ -1,5 +1,5 @@
 name: MeshMap Screenshot Service
-'on':
+on:
   pull_request_target:
     types:
       - opened
@@ -38,7 +38,7 @@ jobs:
           path: action
           repository: layer5labs/meshmap-snapshot
       - id: test_result
-        uses: ${GITHUB_REF/refs/tags//}
+        uses: "${{ GITHUB_REF/refs/tags// }}"
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           mesheryToken: ${{ secrets.MESHERY_TOKEN }}
